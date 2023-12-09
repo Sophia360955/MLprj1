@@ -40,7 +40,7 @@ if rfmodel:
             X_train, X_test, y_train, y_test = train_test_split(X_dummies,y,test_size=0.25, random_state=25)
             ##################################################
             # load model
-            filename = 'C:/Users/toe/Desktop/New folder/batch5/prjsample/test1'
+            filename = 'test1'
             loaded_model = pickle.load(open(filename, "rb"))
             testsdata1=pd.get_dummies(features_dummy)
             testsdata2 =  testsdata1.reindex(columns =  X_train.columns, fill_value=0)
