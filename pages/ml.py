@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 from sklearn.model_selection import train_test_split
 rfmodel= st.sidebar.checkbox('Decision Trees')
-data = pd.read_csv(r'C:\Users\toe\Desktop\New folder\batch5\prjsample\buycomputer.csv')
+data = pd.read_csv('buycomputer.csv')
 
 if rfmodel:
     
